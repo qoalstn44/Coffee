@@ -11,10 +11,9 @@ a {
 }
 /* HEADER */
 header {
-    background-color: royalblue;
+    background-color: #F6F5F0;
 }
 header .inner {
-    background-color: orange;
     width: 1100px;
     height: 120px;
     margin: 0 auto;
@@ -93,4 +92,6 @@ header .sub-menu .search .material-icons {
     margin: auto;
     transition: .4s;
 }
-
+header .sub-menu .search.focused .material-icons {
+    opacity: 0;
+}
