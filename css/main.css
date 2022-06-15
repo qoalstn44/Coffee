@@ -107,4 +107,14 @@ header .main-menu .item .item__name {
     font-family: Arial, sans-serif;
     font-size: 13px;
 }
-header .main-menu .item .item__contents
+header .main-menu .item:hover .item__name {
+    background-color: #2c2a29;
+    color: #ea9926;
+    border-radius: 6px 6px 0 0;
+}
+header .main-menu .item .item__contents {
+    
+}
+
+header .main-menu .item:hover .item__contents {
+}
