@@ -7,7 +7,7 @@ searchEl.addEventListener('click', function () {
     searchElnputEl.focus();
 });
 //검색창 요소 내부 실제 input 요소에 포커스되면 실행.
-searchElnputEl.addEventListener('focus', function () {
+searchElnputEl.addEventListener('focus', function () {       
     searchEl.classList.add('focused');
     searchElnputEl.setAttribute('placeholder', '통합검색');
 });
