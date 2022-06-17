@@ -338,7 +338,7 @@ header .badges .badge{
     align-items: center;
 }
 .notice .inner__left .notice-more .material-icons {
-    color: #fff;
+    color: #fff;      
     font-size: 30px;
 }
 .notice .inner__right {
