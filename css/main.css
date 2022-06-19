@@ -391,3 +391,30 @@ header .badges .badge{
 .promotion .swiper-pagination .swiper-pagination-bullet-active {
     background-image:  url("../images/promotion_slide_pager_on.png");
 }
+.promotion .swiper-button-prev,
+.promotion .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  top: 300px;
+  z-index: 1;
+  color: #333;
+}
+.promotion .swiper-button-prev {
+  left: 50%;
+  margin-left: -480px;
+}
+.promotion .swiper-button-next {
+  right: 50%;
+  margin-right: -480px;
+}
+.promotion .swiper-button-prev:hover,
+.promotion .swiper-button-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+.promotion .swiper-button-prev:after,
+.promotion .swiper-button-next:after {
+    display: none;
+}
