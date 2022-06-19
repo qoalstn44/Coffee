@@ -338,13 +338,30 @@ header .badges .badge{
     align-items: center;
 }
 .notice .inner__left .notice-more .material-icons {
-    color: #fff;      
+    color: #fff;
     font-size: 30px;
 }
 .notice .inner__right {
     width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-
+.notice .inner__right h2 {
+    font-size: 17px;
+    font-weight: 700;
+}
+.notice .inner__right .toogle-promotion {
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notice .inner__right .toogle-promotion .material-icons {
+    font-size: 30px;
+}
 /*PROMOTION*/
 .promotion {            
     display: flex;
