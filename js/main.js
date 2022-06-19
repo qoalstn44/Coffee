@@ -64,5 +64,9 @@ new Swiper('.promotion .swiper', {
     pagination: { // 페이지 번호 사용
       el: '.promotion .swiper-pagination', // 페이지 번호 요소
       clickable: true // 사용자의 페이지 번호 제어 여부
-    }
+    },
+    navigation: { // 슬라이드 이전/다음 버튼 사용
+        prevEl: '.promotion .swiper-button-prev', // 이전 버튼 요소
+        nextEl: '.promotion .swiper-button-next' // 다음 버튼 요소
+      }
 });
