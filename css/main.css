@@ -68,6 +68,24 @@ img {
     color: #333;
     background-color: #fff;    
 }
+/*BACK TO POSITION*/
+.back-to-position {
+    opacity: 0;
+    transition-duration: 1s;
+}
+.back-to-position.to-left {
+    transform: translateX(150px);
+}
+.back-to-position.to-right {
+    transform: translateX(-150px);
+}
+.show .back-to-position {
+    opacity: 1;
+    transform: translateX(0);
+}
+.show .back-to-position.delay-1 { transition-delay: .3s; }
+.show .back-to-position.delay-2 { transition-delay: .6s; }
+.show .back-to-position.delay-3 { transition-delay: .9s; }
 header {
     background-color: #F6F5F0;
     position: fixed;
@@ -591,7 +609,7 @@ header .badges .badge{
 .pick-your-favorite .text-group .descripticon {
     margin-bottom: 40px;
 }
-/*SESERVE STORE*/
+/*RESERVE STORE*/
 .reserve-store {
     background-image: url("../images/reserve_store_bg.jpg");
 }
@@ -628,4 +646,15 @@ header .badges .badge{
     position: absolute;
     top: 150px;
     left: 250px;
+  }
+  .find-store .text-group {
+    position: absolute;
+    top: 120px;
+    left: 550px;
+  }
+  .find-store .text-group .title {
+    margin-bottom: 20px;
+  }
+  .find-store .text-group .descripticon {
+    margin-bottom: 20px;
   }
