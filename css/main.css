@@ -592,6 +592,10 @@ header .badges .badge{
 /*PICK YOUR FAVORITE*/
 .pick-your-favorite {
     background-image: url("../images/favorite_bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .pick-your-favorite .inner {
     padding: 110px 0;
@@ -658,3 +662,37 @@ header .badges .badge{
   .find-store .text-group .descripticon {
     margin-bottom: 20px;
   }
+.reserve-store .inner {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reserve-store .medal {
+    width: 334px;
+    height: 334px;
+    perspective: 600px;
+}
+.reserve-store .medal .front{
+    position: absolute;
+    transition: 1s;
+}
+.reserve-store .medal .back{
+    position:absolute;
+    transition: 1s;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+.reserve-store .medal:hover .front {
+    transform: rotateY(180deg);
+}
+.reserve-store .medal:hover .back {
+    transform: rotateY(0deg);
+}
+.reserve-store .medal .back .btn {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
