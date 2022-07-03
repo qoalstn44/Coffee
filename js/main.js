@@ -46,7 +46,6 @@ fadeEls.forEach(function (fadeEl, index) {
     });
 });
 
-
 new Swiper('.notice .swiper', {
     direction: 'vertical', //수직 슬라이드 
     autoplay: true, //자동 재생 여부 
@@ -70,6 +69,16 @@ new Swiper('.promotion .swiper', {
         nextEl: '.promotion .swiper-button-next' // 다음 버튼 요소
       }
 });
+new Swiper('.awards .swiper', {
+    autoplay: true, // 자동 재생 여부
+    loop: true, // 반복 재생 여부
+    spaceBetween: 30, // 슬라이드 사이 여백
+    slidesPerView: 5, // 한 번에 보여줄 슬라이드 개수
+    navigation: { // 슬라이드 이전/다음 버튼 사용
+      prevEl: '.awards .swiper-button-prev', // 이전 버튼 요소
+      nextEl: '.awards .swiper-button-next' // 다음 버튼 요소
+    }
+  });
 gsap.to('.floating1', 1.5, {
     delay: 1,
     y: 15,
